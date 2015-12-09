@@ -1,0 +1,32 @@
+#ifndef MEMORY
+
+#define MEMORY
+
+#include <cstdio>
+#include <vector>
+#include <cctype>
+#include <iostream>
+#include <cstdlib>
+
+typedef int word;
+
+class memory
+{
+	friend void dump(const memory *);
+	friend void dump(const int, const int, const memory *);
+	private:
+		int size;
+		std::vector <int> block;
+	public:
+		memory(int x) :  size(x){
+			if(size > 0)
+				block.resize(size, 0);
+		}
+		int memorySize() const;
+		void store (const word, const word);
+		word retrieve (const int) const;
+		void copy (const int, const int, const int);
+};
+
+
+#endif

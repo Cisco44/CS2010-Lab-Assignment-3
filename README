@@ -1,0 +1,27 @@
+Author: Francisco Da Costa
+Student ID: 5026516
+
+Lab Assignment 3: Computer Memory Simulation
+
+To Build:
+	$ make
+
+To Run:
+	$ ./LabAss3
+
+Purpose:
+
+The main function of this program is to simulate computer memory.
+
+The program begins by prompting the user for the maximum size of the storage. This cannot be a negative number.
+If the user attempts to input a negative number the program will simple prompt the user to input a positive
+number until one is inputted.
+
+Afterwards it will list the location in the storage and prompt the user to input an integer in the storage in
+the following form "X: ", where X is an integer representing the storage location.
+
+The program will then prompt the user for a location from which he would like to retrieve an integer.
+
+It will then ask the user to enter locations he wishes to copy from, copy to, and how much he would like to copy.
+
+Lastly the program will dump a memory range specified by the user, followed by the entire memory.
